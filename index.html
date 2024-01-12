@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Primera web de Adonay</title>
+</head>
+<body>
+    <!--el form y el input abre un cambo para poder ingresar texto en la web-->
+    <form action="/formulario" method="POST"> 
+        <!--label hace lo que le queremos pedir al ususario por ejemplo nombre-->
+        <!--name me sirve para que al presionar en la pagina nombre pueda escribir tambien-->
+        <!--y placeholder es para que aparezca Nombre en transparente donde esta el cuadro para escribir-->
+        <!-- el type me sirve para ver que tipo de texto es si eimail, pasword, texto etc.-->
+        <label for="nombre">Nombre</label> 
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre de la persona"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apelllido" name="apellido" placeholder="apellido de la persona"/>
+        <br>
+        <!-- textarea nos sirve para crear una cajita para un comentario y el rows es para cuantas lineas es el comentario y cols es para las columnas-->
+        <label for="comentario">Comentario</label> 
+        <br>
+        <textarea cols="50" rows="8"id="comentario" placeholder="Ingrese comentario" name="comentario"></textarea> 
+        <br>
+        <!--este submit envia la informacion a donde uno la mande y eso lo hare arriba en el from-->
+        <input type="submit"/>
+
+    </form>
+   
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <p>Adonay es una persona fria</p> 
+    <p>Adonay es una persona increible</p>
+    <hr>
+    <h2>Rosvin Adonay otro titulo</h2>
+    <p> el hr nos sirve para dividir este titulo de Rosvin</p>
+    <p>Este texto es <span style="color:red">para mostrar este texto sin que se vea alterado el texto</span> 
+        utilizando <br> la etiqueta de span
+    </p>    
+    <!-- Esto nos sirve para hacer comentarios en el codigo-->
+
+    <!--Esta parte del target y el href me sirve para crear un link he ir a esa pagina desde mi pagina web-->
+    <a target="blank" href="https://www.google.com">Ir a google</a>
+     <hr>
+   
+    <img src="Img/coffee.png"  width="400px"/>
+    <img src="Img/tania.jpg"  higth="1200px" width="400px"/>
+ 
+
+</body>
+</html>
