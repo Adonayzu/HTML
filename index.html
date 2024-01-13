@@ -3,8 +3,93 @@
 <head>
    
     <title>Primera web de Adonay</title>
+<!-- este style y agregando la tabla y lo selementos como th y td agrego esto adentro y me arma el cuadro con todos los bordes border: 1px solid black; -->
+    <style>
+        table, th, td {
+            border: 1px solid black;
+
+        }
+    </style>
 </head>
 <body>
+    
+<!--table es para crear una tabla-->
+<!-- este style con el width es para darle el ancho de la tabla que se vea mas grande-->
+    <table style="width: 500px;">
+        <!--tr es la linea que llevara la tabla-->
+        <!-- el thead me sirve para separar un poco mas la cabecera-->
+        <thead>
+            <tr>
+                <!--th es lo que llevara la fila, pero en columna de la tabla-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- el tbody sirve igual separar las filas-->
+        <tbody>
+            <tr>
+                <!--td es para elementos estandares por ejemplo el balon aparece abajo de producto y los 100 Q aparece abajo de precio-->
+                <td>Laptop DELL </td>
+                <td>Q.4,000.00</td>
+            </tr>
+            <tr>
+                <!--td es para elementos estandares por ejemplo el balon aparece abajo de producto y los 100 Q aparece abajo de precio-->
+                <td>Balon de futbol </td>
+                <td>Q.100.00</td>
+            </tr>
+            <tr>
+                <!--td es para elementos estandares por ejemplo el balon aparece abajo de producto y los 100 Q aparece abajo de precio-->
+                <td>Una mesa de escritorio para pc </td>
+                <td>Q.3,500.00</td>
+            </tr>
+        </tbody>
+        <!-- el tfoot me lo agrege como una fila para el total de las cantidades de los precios-->
+        <tfoot>
+            <td>Total</td>
+            <td>Q7,600.00</td>
+        </tfoot>
+
+
+ 
+    </table>
+    <!--ul es lista no ordenada-->
+    <ul>
+        <!--li nos ayuda a poner un a lista pero no ordenada de algo en la web pero con un punto a lado izquierdo es como un alista-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+    </ul>
+    <!--ol es una lista pero ordenada ya que me aparecen en numeros el orden-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <ol>  <!--el style y lo demas me sirve para numerar la lista con la abecedario pero es -->
+            <!-- co el lower-alpha de lo contrario elimino eso y coloco otra forma que quiero que se enumera alli abra opciones-->
+            <li style="list-style-type: lower-alpha;">Un sub elemento 1</li>
+            <li style="list-style-type: lower-alpha;">Un sub elemento 2</li>
+            <li style="list-style-type: lower-alpha;">Un sub elemento 3</li>
+        </ol>
+
+    </ol>
+    <ol><!--por ejemplo con el value empezara a contar desd el 50-->
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <ol>
+            <li>Un sub elemento 1</li>
+            <li>Un sub elemento 2</li>
+            <li>Un sub elemento 3</li>
+        </ol>
+
+    </ol>
+
+
+
     <!--el form y el input abre un cambo para poder ingresar texto en la web-->
     <form action="/formulario" method="POST"> 
         <!--label hace lo que le queremos pedir al ususario por ejemplo nombre-->
@@ -12,21 +97,26 @@
         <!--y placeholder es para que aparezca Nombre en transparente donde esta el cuadro para escribir-->
         <!-- el type me sirve para ver que tipo de texto es si eimail, pasword, texto etc.-->
         <label for="nombre">Nombre</label> 
-        <input type="text" id="nombre" name="nombre" placeholder="Nombre de la persona"/>
+       <!--el value es para definirle algo de una vez al campo-->
+        <input value="Rosvin"type="text" id="nombre" name="nombre" placeholder="Nombre de la persona"/>
         <br>
         <label for="apellido">Apellido</label>
-        <input type="text" id="apelllido" name="apellido" placeholder="apellido de la persona"/>
+        <input value= "Lemus"type="text" id="apelllido" name="apellido" placeholder="apellido de la persona"/>
         <br>
         <!-- textarea nos sirve para crear una cajita para un comentario y el rows es para cuantas lineas es el comentario y cols es para las columnas-->
         <label for="comentario">Comentario</label> 
-        <br>
-        <textarea cols="50" rows="8"id="comentario" placeholder="Ingrese comentario" name="comentario"></textarea> 
+        <br>                                                                    <!--para el comentario solo se agrega eso ejemplopor defecto atras de textarea-->
+        <textarea cols="50" rows="8"id="comentario" placeholder="Ingrese comentario" name="comentario"> Este es un valor por defecto </textarea> 
         <br>
         <!--este submit envia la informacion a donde uno la mande y eso lo hare arriba en el from-->
         <input type="submit"/>
+        <!--los button son mejores ya que le podemos agregar ms coas que un input -->
+        <button type="button">Tipo botón</button>
+        <button type=" reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
 
     </form>
-   
+        <!--El h1 y demas son titulos que peudo colocar depependiendo el numer asi mismo es el tamaño de la letra-->
     <h1>Mi primer heading</h1>
     <h2>Mi segundo heading</h2>
     <h3>Mi tercer heading</h3>
@@ -35,7 +125,7 @@
     <h6>Mi sexto heading</h6>
     <p>Adonay es una persona fria</p> 
     <p>Adonay es una persona increible</p>
-    <hr>
+    <hr> <!-- el hr es para hacer espacio y dos hr es doble espacio esi en las lineas-->
     <h2>Rosvin Adonay otro titulo</h2>
     <p> el hr nos sirve para dividir este titulo de Rosvin</p>
     <p>Este texto es <span style="color:red">para mostrar este texto sin que se vea alterado el texto</span> 
