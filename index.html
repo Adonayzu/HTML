@@ -1,146 +1,64 @@
-<!-- Para iniciar todo solo coloco esto ! para que me muestre la estructura del html para poder trabajar-->
 <!DOCTYPE html>
 <html>
 <head>
-   
-    <title>Primera web de Adonay</title>
-<!-- este style y agregando la tabla y lo selementos como th y td agrego esto adentro y me arma el cuadro con todos los bordes border: 1px solid black; -->
-    <style>
-        table, th, td {
-            border: 1px solid black;
-
-        }
-    </style>
+    
+    <title>Document</title>
 </head>
 <body>
+    <!--header que es encabezamiento me sirve para agrupar link o imagenes-->
+    <header id="titulo"> 
+        <!--id es comoun atributo solo es bueno hacerlo 1 vez-->
+        <h1 id="titulo">Blog de Adonay Zuñiga</Blog>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="blog.CSS">
+    </header>
+     <!-- section son secciones de la aplicacion-->
+    <section class="conteiner">
+        <!--Article es articulo enmarcar algo identificar algo de manera independientepor ejemplo mi primer post el contenido y  o demas-->
+        <!-- el class es mejor para identificar elementos qu el id porqui aqui si puedo identificar varias se completa con css o java-->
+    <div>
+        <article class="post">
+            <h2>Titulo de mi post</h2>
+            <p>Descripcion de mi post</p>
+            <img src="img/coffee.png" width="400"/>
+            <p>Texto del articulo que hay aca y es texto de prueba de Adonay</p>
+
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 2</h2>
+            <p>Descripcion de mi post</p>
+            <img src="img/monster.png" width="400"/>
+            <p>Texto del articulo que hay aca y es texto de prueba de Adonay</p>
+
+        </article>
+        <article class="post">
+            <h2>Titulo de mi post 3</h2>
+            <p>Descripcion de mi post</p>
+            <img src="img/guitarra.png" width="400"/>
+            <p>Texto del articulo que hay aca y es texto de prueba de Adonay</p>
+
+        </article>
+    </section>
+    <!--footer es pie de pagina-->
+    <footer>
+        <!-- y el a href puedo agregar mi correo o algo mas es un link para que se puedan comunicar conmigo l9 que es de blanco es lo que vera la persona -->
+        <a href="rodvin:rodvinlemus4@gmail.com">rodvinlemus4@gmail.com</a>
+        
+    </footer>
+    <footer>
+        <section>
+            <!-- en  3titulo es porque hice el id y al darle ir al comienzo el link me lleva al inicio de la pagina-->
+            <a href="#titulo">Ir al comienzo</a>
+              <!-- y el a href puedo agregar mi correo o algo mas es un link para que se puedan comunicar conmigo l9 que es de blanco es lo que vera la persona -->
+            <a href="rodvin:rodvinlemus4@gmail.com">Contactame aqui</a>
+
+        </section>
+        
+        <p>Copyright 2024</p>
+    </footer>
+
     
-<!--table es para crear una tabla-->
-<!-- este style con el width es para darle el ancho de la tabla que se vea mas grande-->
-    <table style="width: 500px;">
-        <!--tr es la linea que llevara la tabla-->
-        <!-- el thead me sirve para separar un poco mas la cabecera-->
-        <thead>
-            <tr>
-                <!--th es lo que llevara la fila, pero en columna de la tabla-->
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <!-- el tbody sirve igual separar las filas-->
-        <tbody>
-            <tr>
-                <!--td es para elementos estandares por ejemplo el balon aparece abajo de producto y los 100 Q aparece abajo de precio-->
-                <td>Laptop DELL </td>
-                <td>Q.4,000.00</td>
-            </tr>
-            <tr>
-                <!--td es para elementos estandares por ejemplo el balon aparece abajo de producto y los 100 Q aparece abajo de precio-->
-                <td>Balon de futbol </td>
-                <td>Q.100.00</td>
-            </tr>
-            <tr>
-                <!--td es para elementos estandares por ejemplo el balon aparece abajo de producto y los 100 Q aparece abajo de precio-->
-                <td>Una mesa de escritorio para pc </td>
-                <td>Q.3,500.00</td>
-            </tr>
-        </tbody>
-        <!-- el tfoot me lo agrege como una fila para el total de las cantidades de los precios-->
-        <tfoot>
-            <td>Total</td>
-            <td>Q7,600.00</td>
-        </tfoot>
-
-
- 
-    </table>
-    <!--ul es lista no ordenada-->
-    <ul>
-        <!--li nos ayuda a poner un a lista pero no ordenada de algo en la web pero con un punto a lado izquierdo es como un alista-->
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-
-    </ul>
-    <!--ol es una lista pero ordenada ya que me aparecen en numeros el orden-->
-    <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <ol>  <!--el style y lo demas me sirve para numerar la lista con la abecedario pero es -->
-            <!-- co el lower-alpha de lo contrario elimino eso y coloco otra forma que quiero que se enumera alli abra opciones-->
-            <li style="list-style-type: lower-alpha;">Un sub elemento 1</li>
-            <li style="list-style-type: lower-alpha;">Un sub elemento 2</li>
-            <li style="list-style-type: lower-alpha;">Un sub elemento 3</li>
-        </ol>
-
-    </ol>
-    <ol><!--por ejemplo con el value empezara a contar desd el 50-->
-        <li value="50">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <ol>
-            <li>Un sub elemento 1</li>
-            <li>Un sub elemento 2</li>
-            <li>Un sub elemento 3</li>
-        </ol>
-
-    </ol>
-
-
-
-    <!--el form y el input abre un cambo para poder ingresar texto en la web-->
-    <form action="/formulario" method="POST"> 
-        <!--label hace lo que le queremos pedir al ususario por ejemplo nombre-->
-        <!--name me sirve para que al presionar en la pagina nombre pueda escribir tambien-->
-        <!--y placeholder es para que aparezca Nombre en transparente donde esta el cuadro para escribir-->
-        <!-- el type me sirve para ver que tipo de texto es si eimail, pasword, texto etc.-->
-        <label for="nombre">Nombre</label> 
-       <!--el value es para definirle algo de una vez al campo-->
-        <input value="Rosvin"type="text" id="nombre" name="nombre" placeholder="Nombre de la persona"/>
-        <br>
-        <label for="apellido">Apellido</label>
-        <input value= "Lemus"type="text" id="apelllido" name="apellido" placeholder="apellido de la persona"/>
-        <br>
-        <!-- textarea nos sirve para crear una cajita para un comentario y el rows es para cuantas lineas es el comentario y cols es para las columnas-->
-        <label for="comentario">Comentario</label> 
-        <br>                                                                    <!--para el comentario solo se agrega eso ejemplopor defecto atras de textarea-->
-        <textarea cols="50" rows="8"id="comentario" placeholder="Ingrese comentario" name="comentario"> Este es un valor por defecto </textarea> 
-        <br>
-        <!--este submit envia la informacion a donde uno la mande y eso lo hare arriba en el from-->
-        <input type="submit"/>
-        <!--los button son mejores ya que le podemos agregar ms coas que un input -->
-        <button type="button">Tipo botón</button>
-        <button type=" reset">Tipo reset</button>
-        <button type="submit">Tipo submit</button>
-
-    </form>
-        <!--El h1 y demas son titulos que peudo colocar depependiendo el numer asi mismo es el tamaño de la letra-->
-    <h1>Mi primer heading</h1>
-    <h2>Mi segundo heading</h2>
-    <h3>Mi tercer heading</h3>
-    <h4>Mi cuarto heading</h4>
-    <h5>Mi quinto heading</h5>
-    <h6>Mi sexto heading</h6>
-    <p>Adonay es una persona fria</p> 
-    <p>Adonay es una persona increible</p>
-    <hr> <!-- el hr es para hacer espacio y dos hr es doble espacio esi en las lineas-->
-    <h2>Rosvin Adonay otro titulo</h2>
-    <p> el hr nos sirve para dividir este titulo de Rosvin</p>
-    <p>Este texto es <span style="color:red">para mostrar este texto sin que se vea alterado el texto</span> 
-        utilizando <br> la etiqueta de span
-    </p>    
-    <!-- Esto nos sirve para hacer comentarios en el codigo-->
-
-    <!--Esta parte del target y el href me sirve para crear un link he ir a esa pagina desde mi pagina web-->
-    <a target="blank" href="https://www.google.com">Ir a google</a>
-     <hr>
-   
-    <img src="Img/coffee.png"  width="400px"/>
-    <img src="Img/tania.jpg"  higth="1200px" width="400px"/>
- 
-
 </body>
 </html>
